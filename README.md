@@ -2,7 +2,15 @@
 
 This repository contains a collection of introductory machine learning projects, each designed to demonstrate fundamental ML concepts and techniques.
 
+## Table of Contents
+
+- [1. Evaluation Metrics for Medical Diagnosis](#1-evaluation-metrics-for-medical-diagnosis)
+- [2. Image Classification with PyTorch and TensorFlow](#2-image-classification-with-pytorch-and-tensorflow)
+- [3. Tabular Data Problem: Titanic Survival Prediction](#3-tabular-data-problem-titanic-survival-prediction)
+
 ## Projects
+
+### 1. Evaluation Metrics for Medical Diagnosis
 
 ### 1. Evaluation Metrics for Medical Diagnosis
 
