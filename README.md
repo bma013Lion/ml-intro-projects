@@ -79,13 +79,102 @@ python evaluation-metrics/medical_diagnosis_metrics.py
   - ROC curve with AUC score (saved as PNG)
 - Performance analysis across different classification thresholds
 
-### 2. Tabular Data Problem: Titanic Survival Prediction
+### 2. Image Classification with PyTorch and TensorFlow
+
+This project demonstrates how to implement an image classifier using both PyTorch and TensorFlow frameworks to classify the FashionMNIST dataset. The implementation includes data loading, model architecture definition, training, evaluation, and visualization of results.
+
+#### Features
+
+**Data Handling:**
+- Loading and preprocessing the FashionMNIST dataset
+- Data normalization and transformation
+- Visualization of sample images with labels
+
+**Model Architecture (Both Implementations):**
+- Multi-layer neural network with ReLU activations
+- Dropout for regularization
+- Cross-entropy loss with Adam optimizer
+
+**Training Process:**
+- Configurable batch size and learning rate
+- Training/validation split
+- Progress tracking with loss and accuracy metrics
+- Early stopping to prevent overfitting
+
+**Evaluation:**
+- Test set accuracy calculation
+- Confusion matrix visualization
+- Sample predictions with confidence scores
+
+#### Implementation Details
+
+**PyTorch Implementation (`img_classifier_pytorch.py`):**
+- Uses `torch.nn.Module` for model definition
+- Custom training loop with manual gradient updates
+- GPU support with automatic device detection
+- Model checkpointing
+
+**TensorFlow Implementation (`img_classifier_tensorflow.py`):**
+- Uses Keras Sequential API
+- Built-in training loop with `model.fit()`
+- TensorBoard integration for visualization
+- Automatic differentiation with `GradientTape`
+
+#### Skills Demonstrated
+
+- **Deep Learning Fundamentals:**
+  - Neural network architecture design
+  - Forward and backward propagation
+  - Activation functions and optimization
+
+- **PyTorch & TensorFlow:**
+  - Data loading and preprocessing
+  - Model definition and training
+  - GPU acceleration
+
+- **Machine Learning Best Practices:**
+  - Train/validation/test split
+  - Hyperparameter tuning
+  - Model evaluation metrics
+  - Overfitting prevention techniques
+
+#### Usage
+
+1. Install dependencies:
+   ```bash
+   pip install torch torchvision tensorflow matplotlib numpy
+   ```
+
+2. Run the PyTorch implementation:
+   ```bash
+   python image-classification/img_classifier_pytorch.py
+   ```
+
+3. Run the TensorFlow implementation:
+   ```bash
+   python image-classification/img_classifier_tensorflow.py
+   ```
+
+#### Output
+- Training progress (loss and accuracy)
+- Sample images with predictions
+- Model performance on test set
+- Saved model checkpoints in `outputs/` directory
+
+### 3. Tabular Data Problem: Titanic Survival Prediction
 
 This project demonstrates a complete machine learning workflow using the classic Titanic dataset. It includes data exploration, preprocessing, model training, evaluation, and a prediction interface.
 
-#### Files:
+#### Files
 
-1. **titanic_analysis_r1.py**
+1. **Image Classification**
+   - `img_classifier_pytorch.py`: PyTorch implementation
+   - `img_classifier_tensorflow.py`: TensorFlow implementation
+   - `requirements.txt`: Project dependencies
+   - `outputs/`: Directory containing saved models and visualizations
+
+2. **Titanic Survival Prediction**
+   - `titanic_analysis_r1.py`
    - Initial data exploration and model training
    - Basic model evaluation and feature importance analysis
 
