@@ -12,8 +12,6 @@ This repository contains a collection of introductory machine learning projects,
 
 ### 1. Evaluation Metrics for Medical Diagnosis
 
-### 1. Evaluation Metrics for Medical Diagnosis
-
 This project demonstrates how to evaluate machine learning models for medical diagnosis, particularly focusing on imbalanced datasets where positive cases (diseases) are rare. It includes data generation, model training, and comprehensive evaluation metrics.
 
 #### Data Generation
